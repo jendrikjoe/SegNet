@@ -32,7 +32,7 @@ The model is trained with an Adam optimizer with a learning rate of 5e-4. The tr
 
 The training curve looks the following:
 
-![Image](./figs/trainingLoss.png)
+![Image](./figs/trainLoss.png)
 
 The validation cross-entropy such:
 
