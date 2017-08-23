@@ -52,7 +52,7 @@ The results for all the kitty road data can be found in `./gt_image_2`. A good e
 ![Image](./gt_image_2/umm_000029.png)
 
 It can be seen, that all classes are seperated really well.
-This is quite stonishing, when taking into account that the network was trained using a subsampled verison of the cityscapes dataset, with 1024*512 pixels and the inference for the kitty data was done by reshaping them to 1024*512 pixels, doing inference and reshaping the result back to the original size. (The process is shown in processKittyData.py). 
+This is quite stonishing, when taking into account that the network was trained using a subsampled verison of the cityscapes dataset, with 1024x512 pixels and the inference for the kitty data was done by reshaping them to 1024x512 pixels, doing inference and reshaping the result back to the original size. (The process is shown in processKittyData.py). 
 
 
 
