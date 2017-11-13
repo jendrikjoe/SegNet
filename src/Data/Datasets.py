@@ -56,6 +56,7 @@ class CityScapes(Dataset):
     def __init__(self, path, samplesPerBatch, **kwargs):
         super(CityScapes, self).__init__(path=path)
         imageList = glob.glob(self.path + '/leftImg8bit/train/*/*.png')
+        imageList = [path.replace('\\', '/') for path in imageList]
         self.trainData = pd.DataFrame(imageList, columns = ['input'])
         self.trainData['output'] = self.trainData['input'].apply(lambda x: self.path + '/gtFine_trainvaltest/gtFine/train/'+
                                              self.getCityName(x)+'/'+self.getImageName(x)+'_gtFine_labelIds.png')
@@ -363,6 +364,7 @@ class CamVid(Dataset):
     def __init__(self, path, samplesPerBatch, **kwargs):
         super(CamVid, self).__init__(path=path)
         imageList = glob.glob(self.path + '/701_StillsRaw_full/*.png')
+        imageList = [path.replace('\\', '/') for path in imageList]
         data = pd.DataFrame(imageList, columns = ['input'])
         data['output'] = data['input'].apply(lambda x: self.path + '/LabeledApproved_full' + x[x.rfind('/'):-4] + '_L.png')
         data['outputPickled'] = data['input'].apply(lambda x: self.path + '/LabeledApproved_full' + x[x.rfind('/'):-4] + '_L.pickle')
@@ -529,6 +531,7 @@ class Kitti(Dataset):
     def __init__(self, path, samplesPerBatch, **kwargs):
         super(Kitti, self).__init__(path=path)
         imageList = glob.glob(self.path + '/lefttest/*.png')
+        imageList = [path.replace('\\', '/') for path in imageList]
         data = pd.DataFrame(imageList, columns = ['input'])
         data['output'] = data['input'].apply(lambda x: self.path + '/gttest' + x[x.rfind('/'):])
         self.trainData, self.valData = train_test_split(data, test_size = .1, random_state = 42)
@@ -664,6 +667,7 @@ class KittiStreet(Dataset):
     def __init__(self, path, samplesPerBatch, **kwargs):
         super(KittiStreet, self).__init__(path=path)
         imageList = glob.glob(self.path + '/training/image_2/*.png')
+        imageList = [path.replace('\\', '/') for path in imageList]
         data = pd.DataFrame(imageList, columns = ['input'])
         data['output'] = data['input'].apply(lambda x: self.path + '/training/gt_image_2/um_lane' + x[x.rfind('_'):])
         self.trainData, self.valData = train_test_split(data, test_size = .1, random_state = 42)
