@@ -722,10 +722,10 @@ class ApolloScape(Dataset):
             163: 13,  # Bicycle_group -> Cyclish
             164: 5,  # Person_group -> Person
             165: 13,  # Rider_group -> Cyclish
-            166: 22,  # Truck_group -> big vehicle
-            167: 22,  # Bus_group -> big vehicle
+            166: 12,  # Truck_group -> big vehicle
+            167: 12,  # Bus_group -> big vehicle
             168: 13,  # Tricycle_group -> Cyclish
-            255: 4,  # unlabeled (unluckily this is mainly sky...) -> Sky
+            255: 0,  # unlabeled (unluckily this is mainly sky...) -> Sky
         }
         labels_thunderhill = [
             #       name                   id    trainId   category    catId     hasInstances   ignoreInEval   color
@@ -928,6 +928,7 @@ class ApolloScape(Dataset):
                 process.terminate()
 
     def generator_thunderhill(self, data, queue, train, **kwargs):
+        np.random.seed(int(1e7*(time.time()-int(time.time()))))
         while 1:
             index = np.random.randint(0, len(data))
             image = mpimg.imread(data.iloc[index]['input'])
@@ -1631,6 +1632,7 @@ class Mapillary(Dataset):
                 process.terminate()
         
     def generator_thunderhill(self, data, queue, train, **kwargs):
+        np.random.seed(int(1e7*(time.time()-int(time.time()))))
         while 1:
             index = np.random.randint(0, len(data))
             image = mpimg.imread(data.iloc[index]['input'])

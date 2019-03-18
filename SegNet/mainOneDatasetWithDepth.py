@@ -3,14 +3,14 @@ Created on Jun 8, 2017
 
 @author: jendrik
 '''
-from SegNet.Network.Network import SegNet
+from SegNet.Network.Network import SegNet, SegNetDepth
 import numpy as np
 import pickle
 from matplotlib import pyplot as plt
 from SegNet.Data.Datasets import Mapillary, CamVid, ApolloScape
 import torch
 from torch.autograd import Variable
-from SegNet.Network.Trainer import SegNetTrainer
+from SegNet.Network.Trainer import SegNetTrainer, SegNetDepthTrainer
 import functools
 from torch import optim
 from torch.optim.lr_scheduler import LambdaLR
@@ -172,8 +172,8 @@ if __name__ == '__main__':
     data_probs = []
     saveGraph = True
     print("Start building Segnet!")
-    seg_net = SegNet(number_of_classes, dropProb=.3)
-    device = 'cuda:0'
+    seg_net = SegNetDepth(number_of_classes, dropProb=.3)
+    device = 'cuda:1'
     seg_net.to(device)
 
     for dataset in datasets:
@@ -183,10 +183,10 @@ if __name__ == '__main__':
             data_probs.append(len(dataset.train_data) + sum(data_probs))
     optim_part = functools.partial(optim.SGD, momentum=0.9)
     lambda_f = lambda epoch: 0.97 ** epoch
-    trainer = SegNetTrainer(seg_net, optim.Adam, 1e-4, weight_decay=1e-2,
-                            scheduler_class=LambdaLR, log_path='./logs/', log_prefix='',
-                            weights=Variable(torch.from_numpy(weights)).float().to(device),
-                            ckpt_file=None, lr_lambda=[lambda_f])
+    trainer = SegNetDepthTrainer(seg_net, optim.Adam, 1e-4, weight_decay=1e-2,
+                                 scheduler_class=LambdaLR, log_path='./logs/', log_prefix='',
+                                 weights=Variable(torch.from_numpy(weights)).float().to(device),
+                                 ckpt_file=None, lr_lambda=[lambda_f])
     print("Everything Setup!")
     trainer.auto_train(num_epochs, datasets, data_probs, batches_per_epoch,
                        batches_per_val, patience, dist=None)
