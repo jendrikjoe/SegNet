@@ -18,7 +18,7 @@ import torch.nn.init as init
 
 class SegNet(nn.Module):
     
-    def __init__(self, number_of_classes, dropProb=.4):
+    def __init__(self, number_of_classes, dropProb=.4, ckpt_file=None):
         super(SegNet, self).__init__()
         self.number_of_classes = number_of_classes
         self.convs = {}
@@ -101,6 +101,13 @@ class SegNet(nn.Module):
                 self.dec_drops.update({i: drop})
             in_channels = size
 
+        if ckpt_file:
+            self.yolo_trainable = False
+            self.trainPhase = False
+            self.load_state_dict(torch.load(ckpt_file), strict=False)
+            for param in self.parameters():
+                param.requires_grad = False
+
     @property
     def device(self):
         return next(self.parameters()).device
@@ -160,7 +167,7 @@ class SegNet(nn.Module):
 
 class SegNetDepth(nn.Module):
 
-    def __init__(self, number_of_classes, dropProb=.4):
+    def __init__(self, number_of_classes, dropProb=.4, ckpt_file=None):
         super().__init__()
         self.number_of_classes = number_of_classes
         self.convs = {}
@@ -242,6 +249,13 @@ class SegNetDepth(nn.Module):
                 setattr(self, "deconv_drop" + str(i), drop)
                 self.dec_drops.update({i: drop})
             in_channels = size
+
+        if ckpt_file:
+            self.yolo_trainable = False
+            self.trainPhase = False
+            self.model.load_state_dict(torch.load(ckpt_file), strict=False)
+            for param in self.model.parameters():
+                param.requires_grad = False
 
     @property
     def device(self):

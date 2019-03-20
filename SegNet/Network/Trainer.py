@@ -56,7 +56,7 @@ class Trainer(object):
 class SegNetTrainer(Trainer):
     def __init__(self, model, optim_class, lr, weight_decay,
                  scheduler_class, log_path, log_prefix,
-                 weights=None, ckpt_file=None, **kwargs):
+                 weights=None, **kwargs):
         super().__init__(model, log_path, log_prefix)
 
         if isinstance(model, SegNet) or isinstance(model, SegNetDepth):
@@ -73,20 +73,13 @@ class SegNetTrainer(Trainer):
             for k in locals():
                 f.write(str(k) + '\n')
 
-        if ckpt_file:
-            self.yolo_trainable = False
-            self.trainPhase = False
-            self.model.load_state_dict(torch.load(ckpt_file), strict=False)
-            for param in self.model.parameters():
-                param.requires_grad = False
-        else:
-            self.loss_criterion = nn.BCELoss(weights, reduction='none')
-            # self.loss_criterion = nn.CrossEntropyLoss(weights)
-            self.optimizer = optim_class(self.model.parameters(), lr=lr, weight_decay=weight_decay)
-            # self.optimizer = optim.SGD(self.model.parameters(), lr=1e-3, momentum=0.9)
-            self.scheduler = scheduler_class(self.optimizer, **kwargs)
-            self.yolo_trainable = True
-            self.trainPhase = False
+        self.loss_criterion = nn.BCELoss(weights, reduction='none')
+        # self.loss_criterion = nn.CrossEntropyLoss(weights)
+        self.optimizer = optim_class(self.model.parameters(), lr=lr, weight_decay=weight_decay)
+        # self.optimizer = optim.SGD(self.model.parameters(), lr=1e-3, momentum=0.9)
+        self.scheduler = scheduler_class(self.optimizer, **kwargs)
+        self.yolo_trainable = True
+        self.trainPhase = False
 
         self.logits_initialised = False
         self.running_logits = None
@@ -341,15 +334,14 @@ class SegNetTrainer(Trainer):
 class SegNetDepthTrainer(SegNetTrainer):
     def __init__(self, model, optim_class, lr, weight_decay,
                  scheduler_class, log_path, log_prefix,
-                 weights=None, ckpt_file=None, **kwargs):
+                 weights=None, **kwargs):
         super().__init__(model, optim_class, lr, weight_decay,
                          scheduler_class, log_path, log_prefix,
                          weights, ckpt_file, **kwargs)
         ctime_str = datetime.now().isoformat()
         self.log_dir = (log_path + ctime_str + f'SegNetDepth'
                         + log_prefix + '/')
-        if not ckpt_file:
-            self.depth_loss_criterion = nn.MSELoss()
+        self.depth_loss_criterion = nn.MSELoss()
 
     def train_net(self, x, target, depth=None):
         self.model.train(True)
