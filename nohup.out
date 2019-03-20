@@ -1,0 +1,332 @@
+/data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/*
+[4.91601217e+08 2.28407894e+09 1.35807922e+09 4.53290156e+09
+ 3.06630900e+07 8.41523950e+07 7.73508940e+07 3.11924384e+08
+ 1.49070984e+08 7.52878500e+06 4.39582200e+07 5.24210210e+07
+ 3.51895300e+08 3.59575800e+06 1.56911419e+08]
+[0.25673395 0.18412364 0.2036145  0.16349133 0.89247899 0.46947381
+ 0.48881421 0.29068283 0.37011848 1.         0.67537698 0.60360136
+ 0.28083982 1.         0.36322739]
+Spawn Thread 0
+Spawn Thread 1
+Spawn Thread 2
+Spawn Thread 3
+Spawn Thread 4
+Spawn Thread 5
+Spawn Thread 6
+Spawn Thread 7
+Spawn Thread 8
+Spawn Thread 9
+Spawn Thread 10
+Spawn Thread 11
+Spawn Thread 12
+Spawn Thread 13
+Spawn Thread 0
+Spawn Thread 1
+Spawn Thread 2
+Spawn Thread 3
+Spawn Thread 4
+Spawn Thread 5
+Spawn Thread 6
+Spawn Thread 7
+Spawn Thread 8
+Spawn Thread 9
+Spawn Thread 10
+Spawn Thread 11
+Spawn Thread 12
+Spawn Thread 13
+Spawn Thread 0
+Spawn Thread 1
+Spawn Thread 2
+Spawn Thread 3
+Spawn Thread 4
+Spawn Thread 5
+Spawn Thread 6
+Spawn Thread 7
+Spawn Thread 8
+Spawn Thread 9
+Spawn Thread 10
+Spawn Thread 11
+Spawn Thread 12
+Spawn Thread 13
+Spawn Thread 0
+Spawn Thread 1
+Spawn Thread 2
+Spawn Thread 3
+Spawn Thread 4
+Spawn Thread 5
+Spawn Thread 6
+Spawn Thread 7
+Spawn Thread 8
+Spawn Thread 9
+Spawn Thread 10
+Spawn Thread 11
+Spawn Thread 12
+Spawn Thread 13
+Starting training
+Start building Segnet!
+Everything Setup!
+Weights Header:  [       0        1        0 12800000]
+odict_keys(['conv0.weight', 'bn0.weight', 'bn0.bias', 'bn0.running_mean', 'bn0.running_var', 'bn0.num_batches_tracked', 'conv1.weight', 'bn1.weight', 'bn1.bias', 'bn1.running_mean', 'bn1.running_var', 'bn1.num_batches_tracked', 'conv2.weight', 'bn2.weight', 'bn2.bias', 'bn2.running_mean', 'bn2.running_var', 'bn2.num_batches_tracked', 'conv3.weight', 'bn3.weight', 'bn3.bias', 'bn3.running_mean', 'bn3.running_var', 'bn3.num_batches_tracked', 'conv4.weight', 'bn4.weight', 'bn4.bias', 'bn4.running_mean', 'bn4.running_var', 'bn4.num_batches_tracked', 'conv5.weight', 'bn5.weight', 'bn5.bias', 'bn5.running_mean', 'bn5.running_var', 'bn5.num_batches_tracked', 'conv6.weight', 'bn6.weight', 'bn6.bias', 'bn6.running_mean', 'bn6.running_var', 'bn6.num_batches_tracked', 'conv7.weight', 'bn7.weight', 'bn7.bias', 'bn7.running_mean', 'bn7.running_var', 'bn7.num_batches_tracked', 'conv8.weight', 'bn8.weight', 'bn8.bias', 'bn8.running_mean', 'bn8.running_var', 'bn8.num_batches_tracked', 'conv9.weight', 'bn9.weight', 'bn9.bias', 'bn9.running_mean', 'bn9.running_var', 'bn9.num_batches_tracked', 'conv10.weight', 'bn10.weight', 'bn10.bias', 'bn10.running_mean', 'bn10.running_var', 'bn10.num_batches_tracked', 'conv11.weight', 'bn11.weight', 'bn11.bias', 'bn11.running_mean', 'bn11.running_var', 'bn11.num_batches_tracked', 'conv12.weight', 'bn12.weight', 'bn12.bias', 'bn12.running_mean', 'bn12.running_var', 'bn12.num_batches_tracked', 'conv13.weight', 'bn13.weight', 'bn13.bias', 'bn13.running_mean', 'bn13.running_var', 'bn13.num_batches_tracked', 'conv14.weight', 'bn14.weight', 'bn14.bias', 'bn14.running_mean', 'bn14.running_var', 'bn14.num_batches_tracked', 'conv15.weight', 'bn15.weight', 'bn15.bias', 'bn15.running_mean', 'bn15.running_var', 'bn15.num_batches_tracked', 'deconv0.weight', 'deconv_bn0.weight', 'deconv_bn0.bias', 'deconv_bn0.running_mean', 'deconv_bn0.running_var', 'deconv_bn0.num_batches_tracked', 'deconv1.weight', 'deconv_bn1.weight', 'deconv_bn1.bias', 'deconv_bn1.running_mean', 'deconv_bn1.running_var', 'deconv_bn1.num_batches_tracked', 'deconv2.weight', 'deconv_bn2.weight', 'deconv_bn2.bias', 'deconv_bn2.running_mean', 'deconv_bn2.running_var', 'deconv_bn2.num_batches_tracked', 'deconv3.weight', 'deconv_bn3.weight', 'deconv_bn3.bias', 'deconv_bn3.running_mean', 'deconv_bn3.running_var', 'deconv_bn3.num_batches_tracked', 'deconv4.weight', 'deconv_bn4.weight', 'deconv_bn4.bias', 'deconv_bn4.running_mean', 'deconv_bn4.running_var', 'deconv_bn4.num_batches_tracked', 'deconv5.weight', 'deconv_bn5.weight', 'deconv_bn5.bias', 'deconv_bn5.running_mean', 'deconv_bn5.running_var', 'deconv_bn5.num_batches_tracked', 'deconv6.weight', 'deconv_bn6.weight', 'deconv_bn6.bias', 'deconv_bn6.running_mean', 'deconv_bn6.running_var', 'deconv_bn6.num_batches_tracked', 'deconv7.weight', 'deconv_bn7.weight', 'deconv_bn7.bias', 'deconv_bn7.running_mean', 'deconv_bn7.running_var', 'deconv_bn7.num_batches_tracked', 'deconv8.weight', 'deconv_bn8.weight', 'deconv_bn8.bias', 'deconv_bn8.running_mean', 'deconv_bn8.running_var', 'deconv_bn8.num_batches_tracked', 'deconv9.weight', 'deconv_bn9.weight', 'deconv_bn9.bias', 'deconv_bn9.running_mean', 'deconv_bn9.running_var', 'deconv_bn9.num_batches_tracked', 'deconv10.weight', 'deconv_bn10.weight', 'deconv_bn10.bias', 'deconv_bn10.running_mean', 'deconv_bn10.running_var', 'deconv_bn10.num_batches_tracked', 'deconv11.weight', 'deconv_bn11.weight', 'deconv_bn11.bias', 'deconv_bn11.running_mean', 'deconv_bn11.running_var', 'deconv_bn11.num_batches_tracked', 'deconv12.weight', 'deconv_bn12.weight', 'deconv_bn12.bias', 'deconv_bn12.running_mean', 'deconv_bn12.running_var', 'deconv_bn12.num_batches_tracked', 'deconv13.weight', 'deconv_bn13.weight', 'deconv_bn13.bias', 'deconv_bn13.running_mean', 'deconv_bn13.running_var', 'deconv_bn13.num_batches_tracked', 'deconv14.weight', 'deconv_bn14.weight', 'deconv_bn14.bias', 'deconv_bn14.running_mean', 'deconv_bn14.running_var', 'deconv_bn14.num_batches_tracked', 'deconv15.weight', 'deconv_bn15.weight', 'deconv_bn15.bias', 'deconv_bn15.running_mean', 'deconv_bn15.running_var', 'deconv_bn15.num_batches_tracked'])
+(3, 3, 3, 32)
+864
+(3, 3, 32, 64)
+18432
+(3, 3, 64, 128)
+73728
+(1, 1, 128, 64)
+8192
+(3, 3, 64, 128)
+73728
+(3, 3, 128, 256)
+294912
+(1, 1, 256, 128)
+32768
+(3, 3, 128, 256)
+294912
+(3, 3, 256, 512)
+1179648
+(1, 1, 512, 256)
+131072
+(3, 3, 256, 512)
+1179648
+(1, 1, 512, 256)
+131072
+(3, 3, 256, 512)
+1179648
+(3, 3, 512, 1024)
+4718592
+(1, 1, 1024, 512)
+524288
+(3, 3, 512, 1024)
+4718592
+Unused Weights:  6274024.0
+Yolo untrainable
+4 0 (0, 0, 0)
+Step: 0 of 1024, Train Loss: 1.86133 Train Acc 0.0111693 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_074922008_Camera_5.jpg
+Step: 1 of 1024, Train Loss: 1.15563 Train Acc 0.123832 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_075026259_Camera_5.jpg
+Step: 2 of 1024, Train Loss: 0.986299 Train Acc 0.0433149 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/x_h8ylgymTpqoJ5O4itqBQ.jpg
+Step: 3 of 1024, Train Loss: 0.97777 Train Acc 0.0363928 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/yaCd-Moce1ULp9wzic6rnA.jpg
+Step: 4 of 1024, Train Loss: 0.967998 Train Acc 0.127337 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/hM7-uZUOO-3XFwzkbvDCNg.jpg
+Step: 5 of 1024, Train Loss: 0.992044 Train Acc 0.158568 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075334585_Camera_6.jpg
+Step: 6 of 1024, Train Loss: 1.30136 Train Acc 0.0310609 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/oCtgGvddvc-nJDQPq1VyGw.jpg
+Step: 7 of 1024, Train Loss: 0.919357 Train Acc 0.113004 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/WsQqt_jGmk2-ITn_giSLKg.jpg
+Step: 8 of 1024, Train Loss: 1.25279 Train Acc 0.103536 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/N3HOodd-4_us3fDBS6zLog.jpg
+Step: 9 of 1024, Train Loss: 0.962539 Train Acc 0.161464 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/VOF3nh27JIndtwbLd9PCRQ.jpg
+Step: 10 of 1024, Train Loss: 1.04314 Train Acc 0.223144 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record031/Camera 5/170908_065047596_Camera_5.jpg
+Step: 11 of 1024, Train Loss: 0.808753 Train Acc 0.136657 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/15kwLK0TFGJE_3LB4GHglQ.jpg
+Step: 12 of 1024, Train Loss: 1.45443 Train Acc 0.319384 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_075000062_Camera_5.jpg
+Step: 13 of 1024, Train Loss: 0.9709 Train Acc 0.122887 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/4doknTEqs4eQnCA8puL6UQ.jpg
+Step: 14 of 1024, Train Loss: 1.47635 Train Acc 0.0433775 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/mG-tqi3baDv5Ncp98Zod7w.jpg
+Step: 15 of 1024, Train Loss: 0.936898 Train Acc 0.146294 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/5YqLVBCtOtA8ieT2ncQPiw.jpg
+Step: 16 of 1024, Train Loss: 0.861001 Train Acc 0.185808 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/PyMZiUGGDJuSPEpJZAKZ7A.jpg
+Step: 17 of 1024, Train Loss: 1.09947 Train Acc 0.258752 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065516436_Camera_6.jpg
+Step: 18 of 1024, Train Loss: 0.982046 Train Acc 0.215277 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075403184_Camera_6.jpg
+Step: 19 of 1024, Train Loss: 0.962745 Train Acc 0.125988 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/Xmo4hhfC3_KYRZx7RcLmtw.jpg
+Step: 20 of 1024, Train Loss: 1.60245 Train Acc 0.510286 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082022102_Camera_5.jpg
+Step: 21 of 1024, Train Loss: 1.32237 Train Acc 0.404891 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record031/Camera 5/170908_065028268_Camera_5.jpg
+Step: 22 of 1024, Train Loss: 0.623777 Train Acc 0.692625 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065638112_Camera_6.jpg
+Step: 23 of 1024, Train Loss: 0.773518 Train Acc 0.0683936 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/FFAIFMDXC6j64fH70-7MUw.jpg
+Step: 24 of 1024, Train Loss: 0.922914 Train Acc 0.0943101 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/_S7ROKytFvHpEx8rOg43dw.jpg
+Step: 25 of 1024, Train Loss: 1.10286 Train Acc 0.139199 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/kAaAr88YqAw5dOD9tZfv3Q.jpg
+Step: 26 of 1024, Train Loss: 0.924996 Train Acc 0.266511 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075335014_Camera_6.jpg
+Step: 27 of 1024, Train Loss: 1.01283 Train Acc 0.248837 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082042941_Camera_6.jpg
+Step: 28 of 1024, Train Loss: 1.01041 Train Acc 0.0661823 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/C1VOgX-Fl9ylrr81m-bmfw.jpg
+Step: 29 of 1024, Train Loss: 0.914956 Train Acc 0.125798 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/kVZ3CQGUXk49aIioy2dXNg.jpg
+Step: 30 of 1024, Train Loss: 1.3703 Train Acc 0.512694 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082026690_Camera_5.jpg
+Step: 31 of 1024, Train Loss: 0.542681 Train Acc 0.583783 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065708141_Camera_6.jpg
+Step: 32 of 1024, Train Loss: 0.874849 Train Acc 0.134916 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082115196_Camera_6.jpg
+Step: 33 of 1024, Train Loss: 1.05201 Train Acc 0.387003 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073209044_Camera_6.jpg
+Step: 34 of 1024, Train Loss: 0.960612 Train Acc 0.197907 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/a3nTz_BQ9QtM0mJupohvPw.jpg
+Step: 35 of 1024, Train Loss: 0.891952 Train Acc 0.198344 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/DZYMRlbvvWMq4VsB5dmpEg.jpg
+Step: 36 of 1024, Train Loss: 1.06176 Train Acc 0.396124 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082019290_Camera_6.jpg
+Step: 37 of 1024, Train Loss: 1.05142 Train Acc 0.632461 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073311596_Camera_6.jpg
+Step: 38 of 1024, Train Loss: 0.96437 Train Acc 0.398599 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_074906333_Camera_5.jpg
+Step: 39 of 1024, Train Loss: 0.878619 Train Acc 0.203349 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/eJeSz37nXVLGdiUtPmWR6g.jpg
+Step: 40 of 1024, Train Loss: 0.925391 Train Acc 0.326005 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record031/Camera 5/170908_065042220_Camera_5.jpg
+Step: 41 of 1024, Train Loss: 0.9274 Train Acc 0.243104 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_074911692_Camera_6.jpg
+Step: 42 of 1024, Train Loss: 1.1699 Train Acc 0.348945 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record085/Camera 6/170908_081817168_Camera_6.jpg
+Step: 43 of 1024, Train Loss: 1.09794 Train Acc 0.408867 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_074910754_Camera_6.jpg
+Step: 44 of 1024, Train Loss: 1.02673 Train Acc 0.38812 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073218420_Camera_6.jpg
+Step: 45 of 1024, Train Loss: 0.923739 Train Acc 0.12959 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/dOrVhGX7VYVCBZu8nGrUgA.jpg
+Step: 46 of 1024, Train Loss: 1.22346 Train Acc 0.538863 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082025358_Camera_6.jpg
+Step: 47 of 1024, Train Loss: 0.99626 Train Acc 0.400192 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065511106_Camera_6.jpg
+Step: 48 of 1024, Train Loss: 0.92718 Train Acc 0.184663 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065550534_Camera_5.jpg
+Step: 49 of 1024, Train Loss: 0.813247 Train Acc 0.158767 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/bNYxUmzqqX7ozMGQn12oVg.jpg
+Step: 50 of 1024, Train Loss: 0.955081 Train Acc 0.255568 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/jTjM5OEoFpxEZWOFtruMMg.jpg
+Step: 51 of 1024, Train Loss: 0.988592 Train Acc 0.368361 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082007747_Camera_6.jpg
+Step: 52 of 1024, Train Loss: 0.838731 Train Acc 0.611715 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065628623_Camera_6.jpg
+Step: 53 of 1024, Train Loss: 1.31772 Train Acc 0.444549 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065453817_Camera_6.jpg
+Step: 54 of 1024, Train Loss: 0.810794 Train Acc 0.148264 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/UACoMjK4ktZO3JqGXBHS_g.jpg
+Step: 55 of 1024, Train Loss: 1.42906 Train Acc 0.452704 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record031/Camera 5/170908_065022989_Camera_5.jpg
+Step: 56 of 1024, Train Loss: 1.04985 Train Acc 0.445512 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_075017349_Camera_6.jpg
+Step: 57 of 1024, Train Loss: 1.08638 Train Acc 0.46238 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065441368_Camera_6.jpg
+Step: 58 of 1024, Train Loss: 1.12587 Train Acc 0.584211 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073242385_Camera_6.jpg
+Step: 59 of 1024, Train Loss: 0.991304 Train Acc 0.374937 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065448868_Camera_6.jpg
+Step: 60 of 1024, Train Loss: 1.06318 Train Acc 0.459284 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065559244_Camera_6.jpg
+Step: 61 of 1024, Train Loss: 0.901429 Train Acc 0.115185 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/DU07llc0SwXUj3vmrWntFA.jpg
+Step: 62 of 1024, Train Loss: 1.03218 Train Acc 0.364367 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065609124_Camera_5.jpg
+Step: 63 of 1024, Train Loss: 0.444637 Train Acc 0.589137 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065628103_Camera_5.jpg
+Step: 64 of 1024, Train Loss: 1.19404 Train Acc 0.536399 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082024322_Camera_6.jpg
+Step: 65 of 1024, Train Loss: 0.965582 Train Acc 0.285556 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/uuv_omLBQpXGmNq3EurxNA.jpg
+Step: 66 of 1024, Train Loss: 0.929503 Train Acc 0.342201 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_075014060_Camera_5.jpg
+Step: 67 of 1024, Train Loss: 0.690931 Train Acc 0.14356 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/v8gIxSoVdXLgrgY2b7FSjg.jpg
+Step: 68 of 1024, Train Loss: 0.95598 Train Acc 0.250503 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/3wg5bslMRxT5NFq_iEOC9A.jpg
+Step: 69 of 1024, Train Loss: 0.867355 Train Acc 0.369212 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075417197_Camera_6.jpg
+Step: 70 of 1024, Train Loss: 0.53084 Train Acc 0.648627 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065704111_Camera_6.jpg
+Step: 71 of 1024, Train Loss: 0.89649 Train Acc 0.272374 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/0rujw3qZ0gFaipyhAVs6eQ.jpg
+Step: 72 of 1024, Train Loss: 0.978575 Train Acc 0.370435 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065607824_Camera_5.jpg
+Step: 73 of 1024, Train Loss: 0.979053 Train Acc 0.395951 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065446618_Camera_6.jpg
+Step: 74 of 1024, Train Loss: 1.22255 Train Acc 0.550061 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082030142_Camera_5.jpg
+Step: 75 of 1024, Train Loss: 0.874913 Train Acc 0.370652 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082008191_Camera_5.jpg
+Step: 76 of 1024, Train Loss: 0.924444 Train Acc 0.140157 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/-4x3QnUx01ZfYnZPVE9DNA.jpg
+Step: 77 of 1024, Train Loss: 0.468479 Train Acc 0.656939 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065649552_Camera_6.jpg
+Step: 78 of 1024, Train Loss: 1.1322 Train Acc 0.485088 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065559764_Camera_5.jpg
+Step: 79 of 1024, Train Loss: 1.13897 Train Acc 0.490493 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082007155_Camera_6.jpg
+Step: 80 of 1024, Train Loss: 0.933688 Train Acc 0.256912 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/9-jqPM82z7z9W0kvv0CwZg.jpg
+Step: 81 of 1024, Train Loss: 0.891885 Train Acc 0.267181 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/rFO0yAC-F8NvsA678Y_TcQ.jpg
+Step: 82 of 1024, Train Loss: 0.362367 Train Acc 0.753021 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065652802_Camera_5.jpg
+Step: 83 of 1024, Train Loss: 1.06581 Train Acc 0.457044 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075424347_Camera_6.jpg
+Step: 84 of 1024, Train Loss: 0.927631 Train Acc 0.293057 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065615233_Camera_5.jpg
+Step: 85 of 1024, Train Loss: 0.893194 Train Acc 0.371084 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075426778_Camera_6.jpg
+Step: 86 of 1024, Train Loss: 0.961512 Train Acc 0.408052 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_075019351_Camera_6.jpg
+Step: 87 of 1024, Train Loss: 0.255354 Train Acc 0.779384 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065655662_Camera_5.jpg
+Step: 88 of 1024, Train Loss: 0.844047 Train Acc 0.402166 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_075026097_Camera_5.jpg
+Step: 89 of 1024, Train Loss: 0.954561 Train Acc 0.14706 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/-p8VC0pXkTq06tA1YN4VbA.jpg
+Step: 90 of 1024, Train Loss: 1.2589 Train Acc 0.529634 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065524885_Camera_6.jpg
+Step: 91 of 1024, Train Loss: 0.838951 Train Acc 0.327561 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082118524_Camera_5.jpg
+Step: 92 of 1024, Train Loss: 0.857893 Train Acc 0.303768 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/PpajNH11oJRqP9arMVGuWw.jpg
+Step: 93 of 1024, Train Loss: 1.31181 Train Acc 0.655273 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073232604_Camera_6.jpg
+Step: 94 of 1024, Train Loss: 0.970933 Train Acc 0.275045 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/gHC9qa89hQQxyl0AaNpxKw.jpg
+Step: 95 of 1024, Train Loss: 0.367061 Train Acc 0.659761 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065631873_Camera_5.jpg
+Step: 96 of 1024, Train Loss: 1.0014 Train Acc 0.254562 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/MEYIAOEXCedi0XpAOYsejw.jpg
+Step: 97 of 1024, Train Loss: 0.835658 Train Acc 0.401764 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075440934_Camera_6.jpg
+Step: 98 of 1024, Train Loss: 1.07224 Train Acc 0.5357 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062224558_Camera_6.jpg
+Step: 99 of 1024, Train Loss: 0.938952 Train Acc 0.293836 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/32Ix18sApICaU-piP0NJbg.jpg
+Step: 100 of 1024, Train Loss: 0.752301 Train Acc 0.788412 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065621603_Camera_6.jpg
+Step: 101 of 1024, Train Loss: 1.08431 Train Acc 0.560243 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065603144_Camera_6.jpg
+Step: 102 of 1024, Train Loss: 1.09659 Train Acc 0.593242 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073209968_Camera_6.jpg
+Step: 103 of 1024, Train Loss: 0.952452 Train Acc 0.146803 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/fpW0CkFbkCp-68LWD1qYsA.jpg
+Step: 104 of 1024, Train Loss: 0.85535 Train Acc 0.378307 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075327864_Camera_6.jpg
+Step: 105 of 1024, Train Loss: 1.17002 Train Acc 0.580255 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_081947471_Camera_5.jpg
+Step: 106 of 1024, Train Loss: 1.13083 Train Acc 0.555667 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082040637_Camera_6.jpg
+Step: 107 of 1024, Train Loss: 1.10356 Train Acc 0.576204 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062201371_Camera_6.jpg
+Step: 108 of 1024, Train Loss: 0.863374 Train Acc 0.458072 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_081953983_Camera_5.jpg
+Step: 109 of 1024, Train Loss: 1.29861 Train Acc 0.148627 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/rV_bT_YgH1PU9wJBOKicQQ.jpg
+Step: 110 of 1024, Train Loss: 1.23883 Train Acc 0.632218 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_081946355_Camera_5.jpg
+Step: 111 of 1024, Train Loss: 1.13827 Train Acc 0.551345 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065520595_Camera_6.jpg
+Step: 112 of 1024, Train Loss: 0.947335 Train Acc 0.51254 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065542995_Camera_6.jpg
+Step: 113 of 1024, Train Loss: 0.933591 Train Acc 0.292853 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/n4lSAZsPbA-fE9RtT1E2fw.jpg
+Step: 114 of 1024, Train Loss: 0.829114 Train Acc 0.274788 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/TAOlLTU7Ug6Rdo6piq49WQ.jpg
+Step: 115 of 1024, Train Loss: 1.07035 Train Acc 0.641027 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082053309_Camera_6.jpg
+Step: 116 of 1024, Train Loss: 1.0638 Train Acc 0.6211 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082056509_Camera_6.jpg
+Step: 117 of 1024, Train Loss: 0.93772 Train Acc 0.476468 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065503867_Camera_6.jpg
+Step: 118 of 1024, Train Loss: 1.27487 Train Acc 0.680962 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073306772_Camera_6.jpg
+Step: 119 of 1024, Train Loss: 0.91327 Train Acc 0.240669 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/cu1QO5_R_R6CT42j5Sorww.jpg
+Step: 120 of 1024, Train Loss: 1.35627 Train Acc 0.691756 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065606654_Camera_6.jpg
+Step: 121 of 1024, Train Loss: 1.01544 Train Acc 0.525748 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073218956_Camera_6.jpg
+Step: 122 of 1024, Train Loss: 1.03697 Train Acc 0.533978 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065543515_Camera_6.jpg
+Step: 123 of 1024, Train Loss: 1.14509 Train Acc 0.558136 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065520595_Camera_6.jpg
+Step: 124 of 1024, Train Loss: 1.1158 Train Acc 0.631359 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073259537_Camera_6.jpg
+Step: 125 of 1024, Train Loss: 0.928421 Train Acc 0.42532 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/IDX8ZMYpZyA3XCiAx-Qe3A.jpg
+Step: 126 of 1024, Train Loss: 1.4435 Train Acc 0.655489 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_074952912_Camera_6.jpg
+Step: 127 of 1024, Train Loss: 0.898667 Train Acc 0.316231 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/DVt_K0tglDGM7hjbGNpCrg.jpg
+Step: 128 of 1024, Train Loss: 0.843287 Train Acc 0.48567 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075411906_Camera_6.jpg
+Step: 129 of 1024, Train Loss: 0.96561 Train Acc 0.269413 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/xytMNZCoKTXDmmOzEhhVyA.jpg
+Step: 130 of 1024, Train Loss: 1.28056 Train Acc 0.561036 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065425468_Camera_6.jpg
+Step: 131 of 1024, Train Loss: 1.00815 Train Acc 0.204966 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/3gEHBKJipEZZNpHotzi6-g.jpg
+Step: 132 of 1024, Train Loss: 0.69912 Train Acc 0.688203 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065627973_Camera_6.jpg
+Step: 133 of 1024, Train Loss: 0.86417 Train Acc 0.188362 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/zBqWW4oEFrgA1BEMSPHqVg.jpg
+Step: 134 of 1024, Train Loss: 0.241698 Train Acc 0.779312 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065655272_Camera_5.jpg
+Step: 135 of 1024, Train Loss: 0.920277 Train Acc 0.0532335 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/1W1vLWp-2GVcxWnEiO086A.jpg
+Step: 136 of 1024, Train Loss: 1.06565 Train Acc 0.526547 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082020474_Camera_6.jpg
+Step: 137 of 1024, Train Loss: 1.18169 Train Acc 0.584781 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_074926166_Camera_5.jpg
+Step: 138 of 1024, Train Loss: 0.948779 Train Acc 0.182239 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/sXWeJUC2Qe2s4RkyL2KeLw.jpg
+Step: 139 of 1024, Train Loss: 1.22977 Train Acc 0.621321 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082028022_Camera_5.jpg
+Step: 140 of 1024, Train Loss: 1.11192 Train Acc 0.635563 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_074927886_Camera_5.jpg
+Step: 141 of 1024, Train Loss: 0.920291 Train Acc 0.34827 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/3Gd9pUdcMd2QD6I__jae6Q.jpg
+Step: 142 of 1024, Train Loss: 1.41348 Train Acc 0.656514 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062236426_Camera_6.jpg
+Step: 143 of 1024, Train Loss: 0.909351 Train Acc 0.262587 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/tBnPopxY6hj0NRe8XAmtnQ.jpg
+Step: 144 of 1024, Train Loss: 1.06608 Train Acc 0.581945 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082007155_Camera_6.jpg
+Step: 145 of 1024, Train Loss: 0.883783 Train Acc 0.331493 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/gZYMH-fU2C6hAWiBMKu_5g.jpg
+Step: 146 of 1024, Train Loss: 0.907383 Train Acc 0.294279 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/TZkq2Koz5u8KxK4bdeGdRg.jpg
+Step: 147 of 1024, Train Loss: 1.0852 Train Acc 0.625819 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062230849_Camera_6.jpg
+Step: 148 of 1024, Train Loss: 1.08499 Train Acc 0.182488 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/zAJfLYoKki9FOKZAZlJbrA.jpg
+Step: 149 of 1024, Train Loss: 1.0877 Train Acc 0.599396 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record068/Camera 5/170908_075057501_Camera_5.jpg
+Step: 150 of 1024, Train Loss: 0.876515 Train Acc 0.262377 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/pda1fJOl4UUHQ2V05TKsEA.jpg
+Step: 151 of 1024, Train Loss: 0.870711 Train Acc 0.428876 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075335014_Camera_6.jpg
+Step: 152 of 1024, Train Loss: 0.97076 Train Acc 0.291328 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/U6ezctPYyn4ZrObww-O4Tw.jpg
+Step: 153 of 1024, Train Loss: 0.896188 Train Acc 0.254259 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/W9_DNeuImX3aNSKEQ5Hurg.jpg
+Step: 154 of 1024, Train Loss: 0.995854 Train Acc 0.523235 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073207351_Camera_6.jpg
+Step: 155 of 1024, Train Loss: 1.21367 Train Acc 0.118061 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/R8cftDSHpCkukQ4ajmJNKQ.jpg
+Step: 156 of 1024, Train Loss: 0.874986 Train Acc 0.448311 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_075023163_Camera_6.jpg
+Step: 157 of 1024, Train Loss: 1.13562 Train Acc 0.596159 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_074951491_Camera_6.jpg
+Step: 158 of 1024, Train Loss: 0.839396 Train Acc 0.458128 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075445939_Camera_6.jpg
+Step: 159 of 1024, Train Loss: 0.847896 Train Acc 0.275539 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/CZWIokS2dZkBWagqLFNiHA.jpg
+Step: 160 of 1024, Train Loss: 1.0944 Train Acc 0.668025 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record085/Camera 5/170908_081816139_Camera_5.jpg
+Step: 161 of 1024, Train Loss: 0.91837 Train Acc 0.347358 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_075039198_Camera_6.jpg
+Step: 162 of 1024, Train Loss: 0.495546 Train Acc 0.595921 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065634343_Camera_5.jpg
+Step: 163 of 1024, Train Loss: 0.960685 Train Acc 0.175182 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/2OWWW6-gfAuHXQnbjF2ibg.jpg
+Step: 164 of 1024, Train Loss: 0.888175 Train Acc 0.232029 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/TzfgDJlfLw7oJg7RXlD5ng.jpg
+Step: 165 of 1024, Train Loss: 0.935653 Train Acc 0.281521 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/yGFC18MRqRvxsSIow9TpsQ.jpg
+Step: 166 of 1024, Train Loss: 0.900511 Train Acc 0.315298 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/4k3cqXZNBWMee-B4uC06gg.jpg
+Step: 167 of 1024, Train Loss: 0.876262 Train Acc 0.453607 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_081954279_Camera_5.jpg
+Step: 168 of 1024, Train Loss: 0.913291 Train Acc 0.326532 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/cp2b41bAzpc3pz2hDU3_tA.jpg
+Step: 169 of 1024, Train Loss: 0.811509 Train Acc 0.36419 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075430353_Camera_6.jpg
+Step: 170 of 1024, Train Loss: 0.959834 Train Acc 0.290191 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/h6cnQenye8hyCU9-PusAoQ.jpg
+Step: 171 of 1024, Train Loss: 0.867761 Train Acc 0.257683 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/w0CIblxlz_H6-n6k8lhOMg.jpg
+Step: 172 of 1024, Train Loss: 1.13296 Train Acc 0.605751 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 5/170908_074915712_Camera_5.jpg
+Step: 173 of 1024, Train Loss: 0.929596 Train Acc 0.158687 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/8pIpi5zHf2JvoAkmk_WRAg.jpg
+Step: 174 of 1024, Train Loss: 1.32034 Train Acc 0.476166 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_081946859_Camera_6.jpg
+Step: 175 of 1024, Train Loss: 0.848905 Train Acc 0.344418 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/YCFQqCc3v2_M6qRYIU2_IA.jpg
+Step: 176 of 1024, Train Loss: 1.34866 Train Acc 0.664007 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062235282_Camera_6.jpg
+Step: 177 of 1024, Train Loss: 0.872136 Train Acc 0.302213 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/PyYPuEk2HMNbQ9xE6oHOrQ.jpg
+Step: 178 of 1024, Train Loss: 1.40983 Train Acc 0.632328 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082022250_Camera_5.jpg
+Step: 179 of 1024, Train Loss: 0.906819 Train Acc 0.35135 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/y5lCM2PoMfZvNzBuFDKpZw.jpg
+Step: 180 of 1024, Train Loss: 1.18299 Train Acc 0.729158 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082109308_Camera_5.jpg
+Step: 181 of 1024, Train Loss: 0.942878 Train Acc 0.260113 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/LHXKggseOQtQpgzZxb2KsA.jpg
+Step: 182 of 1024, Train Loss: 0.89938 Train Acc 0.401031 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075352030_Camera_6.jpg
+Step: 183 of 1024, Train Loss: 0.88936 Train Acc 0.248381 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/L-fvkYDeIDe_X44tTWGvmw.jpg
+Step: 184 of 1024, Train Loss: 0.872369 Train Acc 0.274052 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/spru3Vw4xXw1OHZq1sDEww.jpg
+Step: 185 of 1024, Train Loss: 0.863994 Train Acc 0.345735 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/r6AuOuMIGMRlYTl92hYhSg.jpg
+Step: 186 of 1024, Train Loss: 1.00529 Train Acc 0.431616 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082016922_Camera_6.jpg
+Step: 187 of 1024, Train Loss: 0.933166 Train Acc 0.31148 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/HfVniIbG3_AgngZd45kLOQ.jpg
+Step: 188 of 1024, Train Loss: 0.834429 Train Acc 0.302143 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/ExNmhQK2CAGq0vlS8_ePqQ.jpg
+Step: 189 of 1024, Train Loss: 0.785061 Train Acc 0.327577 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/nYvYkRZgztpu7alkn-dJtQ.jpg
+Step: 190 of 1024, Train Loss: 0.99508 Train Acc 0.529468 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062227846_Camera_6.jpg
+Step: 191 of 1024, Train Loss: 1.01478 Train Acc 0.144096 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/wZjmE0YFLEDxRv7aQZe3DA.jpg
+Step: 192 of 1024, Train Loss: 0.821404 Train Acc 0.834742 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065617703_Camera_6.jpg
+Step: 193 of 1024, Train Loss: 0.823502 Train Acc 0.398492 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075438932_Camera_6.jpg
+Step: 194 of 1024, Train Loss: 1.10025 Train Acc 0.678079 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062222556_Camera_6.jpg
+Step: 195 of 1024, Train Loss: 1.06887 Train Acc 0.544211 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065546764_Camera_6.jpg
+Step: 196 of 1024, Train Loss: 1.12691 Train Acc 0.620679 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record031/Camera 5/170908_065013369_Camera_5.jpg
+Step: 197 of 1024, Train Loss: 1.09359 Train Acc 0.616446 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073300073_Camera_6.jpg
+Step: 198 of 1024, Train Loss: 0.458398 Train Acc 0.557243 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065627843_Camera_5.jpg
+Step: 199 of 1024, Train Loss: 1.11624 Train Acc 0.621949 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065554824_Camera_6.jpg
+Step: 200 of 1024, Train Loss: 0.564707 Train Acc 0.769044 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 6/170908_065659952_Camera_6.jpg
+Step: 201 of 1024, Train Loss: 0.910673 Train Acc 0.255337 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/lwCBMARHU4duDX5LRWTbjg.jpg
+Step: 202 of 1024, Train Loss: 0.995821 Train Acc 0.580257 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062153194_Camera_6.jpg
+Step: 203 of 1024, Train Loss: 1.01623 Train Acc 0.562447 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record016/Camera 6/170908_062209972_Camera_6.jpg
+Step: 204 of 1024, Train Loss: 0.839611 Train Acc 0.326503 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/HZBM169pciai7dON0DZWMw.jpg
+Step: 205 of 1024, Train Loss: 1.37859 Train Acc 0.688026 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_074908074_Camera_6.jpg
+Step: 206 of 1024, Train Loss: 0.439607 Train Acc 0.788812 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record037/Camera 5/170908_065648122_Camera_5.jpg
+Step: 207 of 1024, Train Loss: 1.12214 Train Acc 0.633373 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record068/Camera 5/170908_075128226_Camera_5.jpg
+Step: 208 of 1024, Train Loss: 0.94749 Train Acc 0.509563 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record068/Camera 5/170908_075102792_Camera_5.jpg
+Step: 209 of 1024, Train Loss: 0.960445 Train Acc 0.251829 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/xKjdYdm9QoZp4v6fQY-h9w.jpg
+Step: 210 of 1024, Train Loss: 0.946895 Train Acc 0.528805 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073215740_Camera_6.jpg
+Step: 211 of 1024, Train Loss: 0.965615 Train Acc 0.253451 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/nq4tX4Z3UCpjCNUEmqtXHQ.jpg
+Step: 212 of 1024, Train Loss: 0.977123 Train Acc 0.256168 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/jcCSYReKXmbXt7D-gaYk_w.jpg
+Step: 213 of 1024, Train Loss: 0.914411 Train Acc 0.504662 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082011446_Camera_6.jpg
+Step: 214 of 1024, Train Loss: 1.27247 Train Acc 0.731888 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 5/170908_082107132_Camera_5.jpg
+Step: 215 of 1024, Train Loss: 0.937226 Train Acc 0.211098 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/yM2xI3U8zLJ--9aImI2sUA.jpg
+Step: 216 of 1024, Train Loss: 1.0939 Train Acc 0.206376 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/BgPBOCe1xdbbM5pB4CQXEQ.jpg
+Step: 217 of 1024, Train Loss: 0.989856 Train Acc 0.385832 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/kleuD3v2M3NXE3aE2uujmA.jpg
+Step: 218 of 1024, Train Loss: 0.920482 Train Acc 0.595317 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082011002_Camera_6.jpg
+Step: 219 of 1024, Train Loss: 1.12296 Train Acc 0.612074 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record086/Camera 6/170908_082028022_Camera_6.jpg
+Step: 220 of 1024, Train Loss: 0.863452 Train Acc 0.446578 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record070/Camera 6/170908_075357893_Camera_6.jpg
+Step: 221 of 1024, Train Loss: 1.2365 Train Acc 0.612993 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record036/Camera 6/170908_065432068_Camera_6.jpg
+Step: 222 of 1024, Train Loss: 0.885227 Train Acc 0.280079 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/te9Y9Fhiq85w5gBukLEfOA.jpg
+Step: 223 of 1024, Train Loss: 0.921584 Train Acc 0.25918 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/0AZiFqSRZ_2Xn1JfaZmcqw.jpg
+Step: 224 of 1024, Train Loss: 0.838544 Train Acc 0.31154 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/AqYKEC-Gluoo64Aals9r8Q.jpg
+Step: 225 of 1024, Train Loss: 1.3189 Train Acc 0.732397 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record058/Camera 6/170908_073149341_Camera_6.jpg
+Step: 226 of 1024, Train Loss: 0.83596 Train Acc 0.319305 /data/Datasets/mapillary-vistas/mapillary-vistas-dataset_public_v1.0/training/images/MgP0_z1uwaeVXQp5yuz8Xw.jpg
+Step: 227 of 1024, Train Loss: 1.18798 Train Acc 0.677916 /data/Datasets/ApolloScape/road01_ins/ColorImage/Record067/Camera 6/170908_074952100_Camera_6.jpg

@@ -157,7 +157,7 @@ if __name__ == '__main__':
     print(weights)
     #mapillary.setWeights(weights)
     
-    patience = 15
+    patience = 30 
     num_epochs = 220
     batches_per_epoch = 1024
     batches_per_val = 1024
@@ -182,7 +182,7 @@ if __name__ == '__main__':
         else:
             data_probs.append(len(dataset.train_data) + sum(data_probs))
     optim_part = functools.partial(optim.SGD, momentum=0.9)
-    lambda_f = lambda epoch: 0.97 ** epoch
+    lambda_f = lambda epoch: 0.99 ** epoch
     trainer = SegNetDepthTrainer(seg_net, optim.Adam, 1e-4, weight_decay=1e-2,
                                  scheduler_class=LambdaLR, log_path='./logs/', log_prefix='',
                                  weights=Variable(torch.from_numpy(weights)).float().to(device),

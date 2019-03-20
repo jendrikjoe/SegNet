@@ -364,7 +364,7 @@ class SegNetDepthTrainer(SegNetTrainer):
                  * mask).mean())
         if depth is not None:
             # depth_mask = (depth < 327).float()
-            loss += self.depth_loss_criterion(pred_depth / 350, depth / 350) * 2  # * depth_mask
+            loss += self.depth_loss_criterion(pred_depth / 350, depth / 350) * 4  # * depth_mask
         try:
             acc = self.calculate_acc(classes, labels_one_hot, target)
         except:
@@ -394,14 +394,14 @@ class SegNetDepthTrainer(SegNetTrainer):
                 self.set_weights('./darknet19_448.weights')
                 print('Yolo untrainable')
                 self.set_yolo_trainable(False)
-                image = Variable(torch.from_numpy(test_image[0]['input_img'])).float().permute(0, 3, 1, 2)
+                comp_image = Variable(torch.from_numpy(test_image[0]['input_img'])).float().permute(0, 3, 1, 2)
                 target = Variable(torch.from_numpy(test_image[1]['output_img'])).long()
                 if 'depth_img' in test_image[1]:
                     depth = Variable(torch.from_numpy(test_image[1]['depth_img'])).float().to(self.base.device)
                 else:
                     depth = None
-                self.train_net(image.to(self.base.device), target.to(self.base.device), depth)
-                res, depth = self.eval(image.to(self.base.device))
+                self.train_net(comp_image.to(self.base.device), target.to(self.base.device), depth)
+                res, depth = self.eval(comp_image.to(self.base.device))
                 res = dataset.convert_target_to_image(res.data.cpu().numpy()[0])
                 mpimg.imsave('./images/initialImage.png', res)  # cv2.addWeighted(res, 0.5, imageTemp, 0.5,0))
                 mpimg.imsave('./images/initialDepth.png' % i, depth[0].data.cpu().numpy())
@@ -458,9 +458,9 @@ class SegNetDepthTrainer(SegNetTrainer):
             writer.add_scalar('Val Accuracy', test_acc, i)
             # Add it to the Tensorboard summary writer
             # Make sure to specify a step parameter to get nice graphs over time
-            res, depth = self.eval(image.to(self.base.device))
+            res, depth = self.eval(comp_image.to(self.base.device))
             res = dataset.convert_target_to_image(res.data.cpu().numpy()[0])
-            image_temp = (255. * image[0].permute(1, 2, 0).data.numpy()).astype('uint8')
+            image_temp = (255. * comp_image[0].permute(1, 2, 0).data.numpy()).astype('uint8')
             if image_temp.shape[0] > res.shape[0]:
                 mpimg.imsave('./images/Epoch%04d.png' % i, cv2.addWeighted(res, 0.5, image_temp[::2, ::2], 0.5, 0))
             else:
