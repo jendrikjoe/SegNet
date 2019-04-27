@@ -42,6 +42,9 @@ class SegNet(nn.Module):
         feed_sizes = {}
         drops_yolo = [4, 7, 12]
         for i, size in layer_sizes_yolo.items():
+            if i in self.feed_outs_yolo:
+                feed_sizes[i] = size
+                print(i, size)
             conv = nn.Conv2d(in_channels=in_channels, out_channels=size,
                              kernel_size=kernel_sizes_yolo[i],
                              stride=1, bias=False)
@@ -58,8 +61,6 @@ class SegNet(nn.Module):
             if i in max_pools_yolo:
                 pool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0)
                 self.pools.update({i: pool})
-            if i in self.feed_outs_yolo:
-                feed_sizes[i] = size
             if i in drops_yolo:
                 drop = nn.Dropout2d(dropProb)
                 setattr(self, "drop" + str(i), drop)
@@ -68,17 +69,22 @@ class SegNet(nn.Module):
 
         # Build deconvolution
         layer_sizes_dec = {i: size for i, size in enumerate(
-            [1024, 512, 512, 512, 256, 512, 256, 256, 512, 256, 128, 256, 128, 128, 96, self.number_of_classes])}
+            [1024, 512, 512, 512, 256, 512, 256, 256, 512, 256, 128, 256, 128, 128, 64, self.number_of_classes]
+        )}
         kernel_sizes_dec = {i: size for i, size in enumerate([3, 1, 3, 3, 1, 3, 1, 3, 3, 1, 3, 3, 1, 3, 3, 3])}
         upscale = [2, 7, 10, 13, 14]
         self.feed_in = [2, 7, 10, 13]
         feed_in_sizes = {}
-        for i, size in zip(upscale, list(feed_sizes.values())[::-1]):
+        feed_size_values = feed_sizes.values()
+        feed_size_values.sort()
+        print(feed_sizes.values())
+        for i, size in zip(upscale, feed_size_values[::-1]):
             feed_in_sizes[i] = size
         drops_dec = [0, 2, 7, 10, 13]
         for i, size in layer_sizes_dec.items():
             if (i-1) in self.feed_in:
                 in_channels += feed_in_sizes[i-1]
+                print(feed_in_sizes[i-1])
             deconv = nn.ConvTranspose2d(
                 in_channels=in_channels, out_channels=size,
                 kernel_size=kernel_sizes_dec[i], stride=1, bias=False)
